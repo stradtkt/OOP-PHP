@@ -8,20 +8,27 @@
 
 class Render
 {
-    public static function displayRecipe($recipe)
+    public static function listIngregients($ingredients)
     {
         $output = "";
-        $output .= $recipe->getTitle() . " by " . $recipe->getSource();
-        $output .= "\n";
-        $output .= implode(", ", $recipe->getTags());
-        $output .= "\n";
-        foreach ($recipe->getIngredients() as $ing)
+        foreach ($ingredients->getIngredients() as $ing)
         {
             $output .= $ing["amount"] . " " . $ing["measure"] . " " . $ing["item"];
             $output .= "\n";
         }
+        return $output;
+    }
+
+    public static function displayRecipe($recipe)
+    {
+        $output = "";
+        $output .= $recipe->getTitle() . " by " . $recipe->getSource();
+        $output .= "\n\n";
+        $output .= implode(", ", $recipe->getTags());
+        $output .= "\n\n";
+        $output .= self::listIngregients($recipe->getIngredients());
         $output .= implode("\n", $recipe->getInstructions());
-        $output .= "\n";
+        $output .= "\n\n";
         $output .= $recipe->getYield();
         return $output;
     }
