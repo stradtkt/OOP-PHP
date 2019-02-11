@@ -27,6 +27,11 @@ class Recipe
         "gallon"
     );
 
+    public function getIngredients()
+    {
+        return $this->ingredients;
+    }
+
     public function add_ingredient($item, $amount = null, $measure = null)
     {
         if($amount != null && !is_float($amount) && !is_int($amount)) {
@@ -56,14 +61,3 @@ class Recipe
         $this->source = ucwords($source);
     }
 }
-$recipe1 = new Recipe();
-$recipe1->set_source("Patrick Stradtman");
-$recipe1->set_title("My First Recipe");
-$recipe1->add_ingredient("egg", 1, "oz");
-
-$recipe2 = new Recipe();
-$recipe2->set_source("Debra Kellington");
-$recipe2->set_title("Pumpkin Pie");
-
-echo $recipe2->displayRecipe();
-echo $recipe1->displayRecipe();
