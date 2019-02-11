@@ -19,6 +19,20 @@ $recipe2->set_source("Debra Kellington");
 $recipe2->set_title("Pumpkin Pie");
 $recipe2->add_ingredient("milk", 1, "pint");
 
+echo $recipe1->get_title();
+foreach ($recipe1->getIngredients() as $ing)
+{
+    echo "\n" . $ing["amount"] . " " . $ing["measure"] . " " . $ing["item"];
+}
+echo implode("\n", $recipe1->getInstructions());
+$recipe1->addTag("Breakfast");
+$recipe1->addTag("Main Course");
+
+echo implode(", ", $recipe1->getTags());
+
+$recipe1->setYield("6 servings");
+echo $recipe1->getYield();
+echo $recipe1->get_source();
 
 echo $recipe2->displayRecipe();
 echo $recipe1->displayRecipe();
