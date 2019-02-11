@@ -14,11 +14,28 @@ class Recipe
     public $source = "Kevin Stradtman";
     public $yield;
     public $tag = array();
+    public function displayRecipe()
+    {
+        return $this->title . " by " . $this->source;
+    }
+
+    public function set_title($title)
+    {
+        $this->title = ucwords($title);
+    }
+
+    public function set_source($source)
+    {
+        $this->source = ucwords($source);
+    }
 }
 $recipe1 = new Recipe();
-echo $recipe1->source = "Patrick Stradtman";
-echo $recipe1->source;
+$recipe1->set_source("Patrick Stradtman");
+$recipe1->set_title("My First Recipe");
 
 $recipe2 = new Recipe();
-echo $recipe2->source = "Debra Kellington";
-echo $recipe2->source;
+$recipe2->set_source("Debra Kellington");
+$recipe2->set_title("Pumpkin Pie");
+
+echo $recipe2->displayRecipe();
+echo $recipe1->displayRecipe();
