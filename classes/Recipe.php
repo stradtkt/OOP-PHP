@@ -44,7 +44,7 @@ class Recipe
         return $this->ingredients;
     }
 
-    public function add_ingredient($item, $amount = null, $measure = null)
+    public function addIngredient($item, $amount = null, $measure = null)
     {
         if($amount != null && !is_float($amount) && !is_int($amount)) {
             exit("The amount must be a float:  " . gettype($amount) . " $amount given");
@@ -58,27 +58,23 @@ class Recipe
             "measure" => strtolower($measure)
         );
     }
-    public function displayRecipe()
-    {
-        return $this->title . " by " . $this->source;
-    }
 
-    public function get_title()
+    public function getTitle()
     {
         return $this->title;
     }
 
-    public function set_title($title)
+    public function setTitle($title)
     {
         $this->title = ucwords($title);
     }
 
-    public function get_source()
+    public function getSource()
     {
         return $this->source;
     }
 
-    public function set_source($source)
+    public function setSource($source)
     {
         $this->source = ucwords($source);
     }
