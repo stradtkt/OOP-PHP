@@ -9,15 +9,13 @@
 include('Recipe.php');
 include('Render.php');
 
-$recipe1 = new Recipe();
+$recipe1 = new Recipe("My First Recipe");
 $recipe1->setSource("Patrick Stradtman");
-$recipe1->setTitle("My First Recipe");
 $recipe1->addIngredient("egg", 1, "oz");
 $recipe1->addIngredient("flour", 2, "cup");
 
-$recipe2 = new Recipe();
+$recipe2 = new Recipe("Pumpkin Pie");
 $recipe2->setSource("Debra Kellington");
-$recipe2->setTitle("Pumpkin Pie");
 $recipe2->addIngredient("milk", 1, "pint");
 
 echo $recipe1->getTitle();
