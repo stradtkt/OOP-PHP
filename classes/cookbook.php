@@ -31,10 +31,12 @@ $cookbook->addRecipe($spicy_omelette);
 $cookbook->addRecipe($scones);
 
 $breakfast = new RecipeCollection("Favorite Breakfasts");
+//echo "\n\n Shopping List";
 foreach($cookbook->filterByTag("breakfast") as $recipe) {
     $breakfast->addRecipe($recipe);
 }
-echo "\n\n Shopping List";
-echo Render::listShopping($breakfast->getCombinedIngredients());
+//echo Render::listRecipes($cookbook->getRecipeTitles());
+//echo Render::listShopping($breakfast->getCombinedIngredients());
+//echo Render::listRecipes(getRecipeTitles());
 
-echo Render::listRecipes(getRecipeTitles());
+echo Render::displayRecipe($cookbook->filterById(2));
