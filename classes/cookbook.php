@@ -29,3 +29,4 @@ $cookbook->addRecipe($corn_beef_hash);
 $cookbook->addRecipe($granola);
 $cookbook->addRecipe($spicy_omelette);
 $cookbook->addRecipe($scones);
+echo Render::listRecipes(getRecipeTitles());

@@ -19,6 +19,12 @@ class Render
         return $output;
     }
 
+    public static function listRecipes($titles)
+    {
+        asort($titles);
+        return implode("\n", $titles);
+    }
+
     public static function displayRecipe($recipe)
     {
         $output = "";
