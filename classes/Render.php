@@ -8,7 +8,7 @@
 
 class Render
 {
-    public static function listIngregients($ingredients)
+    public static function listIngredients($ingredients)
     {
         $output = "";
         foreach ($ingredients->getIngredients() as $ing)
@@ -17,6 +17,12 @@ class Render
             $output .= "\n";
         }
         return $output;
+    }
+
+    public static function listShopping($ingredient_list)
+    {
+        ksort($ingredient_list);
+        return implode("\n", array_keys($ingredient_list));
     }
 
     public static function listRecipes($titles)
@@ -32,7 +38,7 @@ class Render
         $output .= "\n\n";
         $output .= implode(", ", $recipe->getTags());
         $output .= "\n\n";
-        $output .= self::listIngregients($recipe->getIngredients());
+        $output .= self::listIngredients($recipe->getIngredients());
         $output .= implode("\n", $recipe->getInstructions());
         $output .= "\n\n";
         $output .= $recipe->getYield();

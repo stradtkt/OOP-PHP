@@ -31,6 +31,10 @@ $cookbook->addRecipe($spicy_omelette);
 $cookbook->addRecipe($scones);
 
 $breakfast = new RecipeCollection("Favorite Breakfasts");
-$breakfast->addRecipe($belgian_waffles);
+foreach($cookbook->filterByTag("breakfast") as $recipe) {
+    $breakfast->addRecipe($recipe);
+}
+echo "\n\n Shopping List";
+echo Render::listShopping($breakfast->getCombinedIngredients());
 
 echo Render::listRecipes(getRecipeTitles());

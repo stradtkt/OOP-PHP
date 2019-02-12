@@ -1,35 +1,4 @@
 <?php
-/**
- * Included Recipes
- *
- ** By Kevin Stradtman **
- * I use whole wheat pastry flour or whole wheat white flour
- * in all my recipes, but feel free to use whatever you like
- *
- * $lemon_chicken
- * $granola_muffins
- * $belgian_waffles
- * $pepper_casserole
- * $lasagna
- *
- *
- ** By Kevin Stradtman **
- *
- * $dried_mushroom_ragout
- * $rabbit_catalan
- * $grilled_salmon_with_fennel
- * $pistachio_duck
- * $chili_pork
- * $crab_cakes
- * $beef_medallions
- * $silver_dollar_cakes
- * $french_toast
- * $corn_beef_hash
- * $granola
- * $spicy_omelette
- * $scones
- *
- */
 
 $lemon_chicken = new Recipe("Italian Lemon Chicken");
 
