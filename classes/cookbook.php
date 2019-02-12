@@ -29,4 +29,8 @@ $cookbook->addRecipe($corn_beef_hash);
 $cookbook->addRecipe($granola);
 $cookbook->addRecipe($spicy_omelette);
 $cookbook->addRecipe($scones);
+
+$breakfast = new RecipeCollection("Favorite Breakfasts");
+$breakfast->addRecipe($belgian_waffles);
+
 echo Render::listRecipes(getRecipeTitles());

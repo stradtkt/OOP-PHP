@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f32e3e78-5251-430c-8fce-f549d8d8fb6f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/classes/RecipeCollection.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/RecipeCollection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/Render.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Render.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/cookbook.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/cookbook.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/classes/RecipeCollection.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="715">
-              <caret line="48" column="23" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
+            <state relative-caret-position="697">
+              <caret line="59" column="27" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -55,7 +53,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/cookbook.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
@@ -83,9 +81,9 @@
       <list>
         <option value="$PROJECT_DIR$/classes/Recipe.php" />
         <option value="$PROJECT_DIR$/inc/recipes.php" />
-        <option value="$PROJECT_DIR$/classes/RecipeCollection.php" />
         <option value="$PROJECT_DIR$/classes/Render.php" />
         <option value="$PROJECT_DIR$/classes/cookbook.php" />
+        <option value="$PROJECT_DIR$/classes/RecipeCollection.php" />
       </list>
     </option>
   </component>
@@ -148,12 +146,12 @@
       <option name="presentableId" value="Default" />
       <updated>1549910659452</updated>
       <workItem from="1549910662685" duration="9114000" />
-      <workItem from="1549931238104" duration="1915000" />
+      <workItem from="1549931238104" duration="2185000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11029000" />
+    <option name="totallyTimeSpent" value="11299000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -219,17 +217,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/RecipeCollection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="715">
-          <caret line="48" column="23" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes/cookbook.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="25" column="43" lean-forward="true" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/RecipeCollection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="59" column="27" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
         </state>
       </provider>
     </entry>
